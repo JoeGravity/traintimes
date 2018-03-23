@@ -12,6 +12,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
+    <link href="https://fonts.googleapis.com/css?family=Fascinate|Six+Caps" rel="stylesheet">
+    <style>
+      .jumbotron {
+        background-image: url("nightrain.jpg");
+        background-size: cover;
+        color: rgb(255, 246, 165) !important;
+      }
+      h1 {
+        font-size: 24mm;
+        font-family: 'Fascinate', cursive;
+      }
+      .dkpanel {
+        border-color: #464b6c
+      }
+      .dkheader {
+        background-color: #464b6c !important;
+      }
+      button {
+        background-color: #464b6c !important;
+      }
+    </style>
     <!-- Firebase Reference -->
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
@@ -28,8 +49,8 @@
 
       <!-- Jumbotron -->
       <div class="jumbotron" style="background-color: rgb(131, 23, 97); color: white">
-        <h1 class="text-center">Train Time</h1>
-        <h3 class="text-center">All the time is train times</h3>
+        <h1>Train Time</h1>
+        <h3 style="color: white">All the time is train time!</h3>
       </div>
 
       <div class="row">
@@ -37,8 +58,8 @@
         <div class="col-lg-12">
 
         <!-- Current trains-->
-          <div class="panel panel-primary">
-            <div class="panel-heading">
+        <div class="panel panel-primary dkpanel">
+          <div class="panel-heading dkheader">
               <h3 class="panel-title"><strong>Current Train Schedule</strong></h3>
             </div>
             <div class="panel-body">
@@ -59,8 +80,8 @@
           </div>
 
           <!-- Add train  -->
-          <div class="panel panel-primary">
-            <div class="panel-heading">
+          <div class="panel panel-primary dkpanel">
+            <div class="panel-heading dkheader">
               <h3 class="panel-title"><strong>Add Train</strong></h3>
             </div>
             <div class="panel-body">
